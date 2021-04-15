@@ -1,0 +1,29 @@
+<div class='drop-target'>
+    <!-- <small>Drag a character here to track their fleeting luck points.</small>-->
+    <p>
+        <button class="luck-form-btn clear-all-luck">
+            <i class="fas fa-minus"></i> Clear All Luck
+        </button>
+    </p>
+    <ol>
+        {{#each characters as |char|}}
+        <li class="char-member flexrow" data-entity-id="{{char.actor._id}}" draggable="true">
+            <img class="char-member-avatar" title="{{char.actor.name}}" src="{{char.actor.img}}">
+            <span>
+                {{ actor.name}}:
+            </span>
+            <span>
+                {{ luck }}: 
+                {{#each char.burn as |brn|}}      
+                    <i class="fas fa-burn"></i>
+                {{/each}}
+            </span>
+            <span>
+                <button data-entity-id="{{char.actor.name}}" class="luck-form-add-btn"><i data-entity-id="{{char.actor.name}}" class="fas fa-plus"></i></button>
+                &nbsp;
+                <button data-entity-id="{{char.actor.name}}" class="luck-form-sub-btn"><i data-entity-id="{{char.actor.name}}" class="fas fa-minus"></i></button>
+            </span>
+        </li>
+        {{/each}}
+    </ol>    
+</div>

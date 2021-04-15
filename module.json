@@ -1,0 +1,17 @@
+{
+	"name": "fleeting-luck",
+	"title": "Fleeting Luck",
+	"description": "Adds a screen to track fleeting luck tokens for players",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.7.0",
+	"compatibleCoreVersion": "0.7.7",
+	"author": "Reichenau, Cody",
+	"download": "https://github.com/creichenau/fleeting-luck/archive/refs/tags/1.zip",
+	"scripts": [
+		"scripts/hooks.js"
+	],
+	"styles": [
+		"styles/styles.css"
+	],
+	"dependencies": []
+}
